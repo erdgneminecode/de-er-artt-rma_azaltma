@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+     #div1{
+        background-color: rgb(100, 239, 252);
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: 
+        center;
+        align-items: center;
+      border-radius: 15px;
+        
+     }
+        
+        #arttırma{
+            background-color: rgb(255, 251, 0);
+            color: black;
+            width:40px;
+            height: 40px;
+            border:none;
+            font-size: 20px;
+            
+        }
+        #azaltma{
+            background-color: rgb(255, 102, 0);
+            color: black;
+            width:40px;
+            height: 40px;
+            border:none;
+            font-size: 20px;
+           
+        }
+        #text{
+            color: black;
+            width: 300px;
+            height: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+   <div id="div1">
+    <input id="text" type="text" value="0"  >
+    <br/><br><br>
+    <button id="arttırma" onclick="artırma()">+</button>
+    <button id="azaltma" onclick="azaltma()">-</button>
+   </div>
+    <script>
+ function artırma(){
+   var a=document.getElementById("text").value;
+    a=Number(a);
+    a+=1;
+    document.getElementById("text").value=a;
+
+ }
+ function azaltma(){
+   var a=document.getElementById("text").value;
+    a=Number(a);
+    a-=1;
+    document.getElementById("text").value=a;
+
+ }
+
+    </script>
+</body>
+</html>
